@@ -1,6 +1,26 @@
 # go_league_cli
 This is a cli tool that take in a file of games played and computes the league standings
 
+The tool takes in a text file with games for each line in the form of 
+`[Team 1] [score], [Team 2] [score]`
+With the team's name being a string and the score being an integer  input eg:
+```
+Lions 3, Snakes 3
+Tarantulas 1, FC Awesome 0
+Lions 1, FC Awesome 1
+Tarantulas 3, Snakes 1
+Lions 4, Grouches 0
+```
+
+and will print out the league standings:
+```
+1. Tarantulas, 6 pts
+2. Lions, 5 pts
+3. FC Awesome, 1 pt
+3. Snakes, 1 pt
+5. Grouches, 0 pts
+```
+
 ![Release Status](https://github.com/kbnox/go_league_cli/actions/workflows/build_and_test.yml/badge.svg)
 
 ![Release Status](https://github.com/kbnox/go_league_cli/actions/workflows/release.yml/badge.svg)
