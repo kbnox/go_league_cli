@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestMainFlags(t *testing.T) {
+func TestMainNoFlags(t *testing.T) {
 	cmd := exec.Command("./main")
 
 	var out bytes.Buffer
@@ -19,7 +19,7 @@ func TestMainFlags(t *testing.T) {
 }
 
 func TestMain(t *testing.T) {
-	cmd := exec.Command("./main -file test_score.txt")
+	cmd := exec.Command("./go_league_cli", "-file", "test_score.txt")
 
 	var out bytes.Buffer
 	cmd.Stdout = &out

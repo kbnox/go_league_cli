@@ -27,6 +27,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	fmt.Print(*fileName)
+
 	//We open our file.
 	file, err := os.Open(*fileName)
 	if err != nil {
