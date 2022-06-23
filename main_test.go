@@ -9,7 +9,7 @@ import (
 )
 
 func TestMainNoFlags(t *testing.T) {
-	cmd := exec.Command("./main")
+	cmd := exec.Command("./go_league_cli")
 
 	var out bytes.Buffer
 	cmd.Stdout = &out
